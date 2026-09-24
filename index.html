@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brasa & Oliva - Restaurante contemporâneo">
+  <title>Brasa & Oliva | Cozinha Contemporânea</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <a href="#inicio" class="logo">
+    BRASA <span>&</span> OLIVA
+    <small>COZINHA CONTEMPORÂNEA</small>
+  </a>
+
+  <nav id="nav">
+    <a href="#inicio">Início</a>
+    <a href="#historia">Nossa História</a>
+    <a href="#cardapio">Cardápio</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <a href="#reserva" class="reserve-header">Reservar mesa</a>
+
+  <button class="menu-button" onclick="toggleMenu()">☰</button>
+</header>
+
+
+<main>
+
+  <!-- CAPA -->
+  <section class="hero" id="inicio">
+
+    <div class="hero-content">
+      <p class="eyebrow">FOGO • SABOR • EXPERIÊNCIA</p>
+
+      <h1>
+        Cozinha feita<br>
+        para ser <em>sentida.</em>
+      </h1>
+
+      <p class="hero-text">
+        Ingredientes selecionados, fogo e criatividade se encontram
+        em uma experiência gastronômica memorável.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#cardapio" class="primary-button">Explorar cardápio</a>
+        <a href="#reserva" class="secondary-button">Reservar uma mesa</a>
+      </div>
+    </div>
+
+    <div class="hero-bottom">
+      <span>LONDRINA • PARANÁ</span>
+      <span>TER — DOM • 18H ÀS 23H</span>
+    </div>
+
+  </section>
+
+
+  <!-- HISTÓRIA -->
+  <section class="story" id="historia">
+
+    <div class="story-image">
+      <img
+        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85"
+        alt="Prato de restaurante">
+    </div>
+
+    <div class="story-content">
+      <p class="section-label">NOSSA ESSÊNCIA</p>
+
+      <h2>
+        Onde o fogo encontra<br>
+        a simplicidade.
+      </h2>
+
+      <p>
+        O Brasa & Oliva nasceu da ideia de transformar ingredientes
+        simples em experiências marcantes.
+      </p>
+
+      <p>
+        Nossa cozinha combina técnicas contemporâneas, produtos
+        frescos e o sabor único do preparo no fogo.
+      </p>
+
+      <p>
+        Cada prato é pensado para despertar memórias, criar encontros
+        e transformar uma refeição em um momento especial.
+      </p>
+
+      <div class="signature">
+        Brasa & Oliva
+        <span>desde 2026</span>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- DESTAQUES -->
+  <section class="featured">
+
+    <div class="section-title">
+      <p class="section-label">DA NOSSA COZINHA</p>
+      <h2>Pratos em destaque</h2>
+      <p>Uma pequena seleção dos sabores da casa.</p>
+    </div>
+
+    <div class="featured-grid">
+
+      <article class="dish">
+        <div class="dish-image">
+          <img
+            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85"
+            alt="Carne preparada">
+        </div>
+
+        <div class="dish-info">
+          <span>PRATO PRINCIPAL</span>
+          <h3>Brasa da Casa</h3>
+          <p>
+            Corte selecionado, legumes tostados,
+            molho da casa e ervas frescas.
+          </p>
+          <strong>R$ 78</strong>
+        </div>
+      </article>
+
+
+      <article class="dish">
+        <div class="dish-image">
+          <img
+            src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=900&q=85"
+            alt="Risoto">
+        </div>
+
+        <div class="dish-info">
+          <span>ESPECIALIDADE</span>
+          <h3>Risoto do Bosque</h3>
+          <p>
+            Arroz cremoso, cogumelos, parmesão
+            e azeite aromático.
+          </p>
+          <strong>R$ 64</strong>
+        </div>
+      </article>
+
+
+      <article class="dish">
+        <div class="dish-image">
+          <img
+            src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=85"
+            alt="Sobremesa">
+        </div>
+
+        <div class="dish-info">
+          <span>SOBREMESA</span>
+          <h3>Doce Oliva</h3>
+          <p>
+            Chocolate intenso, creme delicado
+            e finalização especial da casa.
+          </p>
+          <strong>R$ 32</strong>
+        </div>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- FRASE -->
+  <section class="manifesto">
+    <p class="section-label">NOSSA FILOSOFIA</p>
+
+    <blockquote>
+      “Boa comida aproxima pessoas.<br>
+      O resto acontece à mesa.”
+    </blockquote>
+  </section>
+
+
+  <!-- CARDÁPIO -->
+  <section class="menu-section" id="cardapio">
+
+    <div class="section-title light-title">
+      <p class="section-label">MENU BRASA & OLIVA</p>
+      <h2>Nosso cardápio</h2>
+    </div>
+
+    <div class="menu-tabs">
+      <button class="tab active" onclick="showMenu('entradas', this)">
+        Entradas
+      </button>
+
+      <button class="tab" onclick="showMenu('principais', this)">
+        Principais
+      </button>
+
+      <button class="tab" onclick="showMenu('sobremesas', this)">
+        Sobremesas
+      </button>
+    </div>
+
+
+    <div class="menu-list active" id="entradas">
+
+      <div class="menu-item">
+        <div>
+          <h3>Pão da Casa</h3>
+          <p>Pão artesanal, manteiga defumada e azeite de ervas.</p>
+        </div>
+        <strong>R$ 24</strong>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <h3>Bruschetta Brasa</h3>
+          <p>Tomates assados, queijo cremoso, manjericão e pão tostado.</p>
+        </div>
+        <strong>R$ 32</strong>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <h3>Carpaccio da Casa</h3>
+          <p>Carne fatiada, parmesão, folhas e molho especial.</p>
+        </div>
+        <strong>R$ 42</strong>
+      </div>
+
+    </div>
+
+
+    <div class="menu-list" id="principais">
+
+      <div class="menu-item">
+        <div>
+          <h3>Brasa da Casa</h3>
+          <p>Corte selecionado, legumes tostados e molho da casa.</p>
+        </div>
+        <strong>R$ 78</strong>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <h3>Risoto do Bosque</h3>
+          <p>Cogumelos, parmesão e azeite aromático.</p>
+        </div>
+        <strong>R$ 64</strong>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <h3>Massa Mediterrânea</h3>
+          <p>Massa fresca, tomates, ervas, parmesão e azeite.</p>
+        </div>
+        <strong>R$ 58</strong>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <h3>Peixe & Oliva</h3>
+          <p>Peixe grelhado, purê rústico e molho cítrico.</p>
+        </div>
+        <strong>R$ 72</strong>
+      </div>
+
+    </div>
+
+
+    <div class="menu-list" id="sobremesas">
+
+      <div class="menu-item">
+        <div>
+          <h3>Doce Oliva</h3>
+          <p>Chocolate intenso, creme delicado e crocante.</p>
+        </div>
+        <strong>R$ 32</strong>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <h3>Creme de Baunilha</h3>
+          <p>Baunilha, frutas frescas e caramelo.</p>
+        </div>
+        <strong>R$ 28</strong>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <h3>Torta da Casa</h3>
+          <p>Massa crocante, chocolate e sorvete artesanal.</p>
+        </div>
+        <strong>R$ 34</strong>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EXPERIÊNCIA -->
+  <section class="experience" id="experiencia">
+
+    <div class="experience-content">
+      <p class="section-label">MAIS QUE UMA REFEIÇÃO</p>
+
+      <h2>Uma experiência<br>para compartilhar.</h2>
+
+      <p>
+        Ambiente acolhedor, sabores marcantes e uma equipe preparada
+        para transformar sua noite em uma lembrança especial.
+      </p>
+    </div>
+
+    <div class="experience-gallery">
+
+      <img
+        src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=85"
+        alt="Gastronomia">
+
+      <img
+        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=85"
+        alt="Restaurante">
+
+    </div>
+
+  </section>
+
+
+  <!-- RESERVA -->
+  <section class="reservation" id="reserva">
+
+    <div class="reservation-heading">
+      <p class="section-label">SUA MESA ESTÁ ESPERANDO</p>
+      <h2>Faça sua reserva</h2>
+
+      <p>
+        Preencha os dados para simular uma reserva no
+        Brasa & Oliva.
+      </p>
+    </div>
+
+    <form onsubmit="makeReservation(event)">
+
+      <div class="form-row">
+        <div>
+          <label for="name">Nome</label>
+          <input id="name" type="text" placeholder="Seu nome" required>
+        </div>
+
+        <div>
+          <label for="phone">WhatsApp</label>
+          <input id="phone" type="tel" placeholder="(00) 00000-0000" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+
+        <div>
+          <label for="date">Data</label>
+          <input id="date" type="date" required>
+        </div>
+
+        <div>
+          <label for="time">Horário</label>
+
+          <select id="time" required>
+            <option value="">Selecione</option>
+            <option>18:00</option>
+            <option>19:00</option>
+            <option>20:00</option>
+            <option>21:00</option>
+            <option>22:00</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="people">Pessoas</label>
+
+          <select id="people" required>
+            <option value="">Selecione</option>
+            <option>1 pessoa</option>
+            <option>2 pessoas</option>
+            <option>3 pessoas</option>
+            <option>4 pessoas</option>
+            <option>5 pessoas</option>
+            <option>6 pessoas</option>
+          </select>
+        </div>
+
+      </div>
+
+      <button type="submit">Solicitar reserva</button>
+
+      <p id="reservation-message"></p>
+
+    </form>
+
+  </section>
+
+
+  <!-- INFORMAÇÕES -->
+  <section class="restaurant-info" id="contato">
+
+    <div>
+      <p class="section-label">VISITE-NOS</p>
+      <h2>Brasa <span>&</span> Oliva</h2>
+    </div>
+
+    <div>
+      <h3>Endereço</h3>
+      <p>Centro • Londrina - PR</p>
+      <small>Endereço demonstrativo</small>
+    </div>
+
+    <div>
+      <h3>Horários</h3>
+      <p>Terça a quinta • 18h — 23h</p>
+      <p>Sexta a domingo • 18h — 00h</p>
+    </div>
+
+    <div>
+      <h3>Contato</h3>
+      <p>WhatsApp demonstrativo</p>
+      <p>Instagram demonstrativo</p>
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+  <div class="footer-logo">
+    BRASA <span>&</span> OLIVA
+  </div>
+
+  <p>
+    © 2026 Brasa & Oliva • Projeto demonstrativo de portfólio.
+  </p>
+
+  <button onclick="demoInstagram()">Instagram</button>
+</footer>
+
+
+<button class="floating-reserve" onclick="goToReservation()">
+  Reservar
+</button>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
